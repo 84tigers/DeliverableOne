@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Raleway');
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+header {
+  border-radius: 4px 4px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  font-family: 'Quicksand', sans-serif;
+  color: #7f7f7f;
+  font-size: 12px;
+}
+  a:hover {
+  color: white;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column-reverse;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar > .navlink {
+    border: 1px solid black;
+    border-radius: 0 4px 4px 0;
+    margin: 8px;
+    width: 25%;
+  }
+  .imgcont {
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgcont > .image {
+    width: 240px;
+    height: 360px;
+    margin: auto;
+
+  }
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: red;
+  margin: 0 auto;
+  border-radius: 4px 4px 0 0;
+}
+.navbar > .navlink{
+  background-color: black;
+  padding: 4px 10px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 4px 4px 0 0;
+  margin: 8px 8px 0 8px ;
+}
+h1 {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 24px;
+  text-align: center;
+  font-size: 45px;
+  border-bottom: 1px dotted black;
+  padding-bottom: 0.5em
+}
+main {
+  background-color: #e6e6e6;
+  margin: auto;
+  width: auto;
+  padding-bottom: 4em;
+}
+
+.imgcont {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.imgcont > .image {
+  /*padding-top: 2em;*/
+  border-radius: 10px;
+  margin: 2em 1em;
+  box-shadow: 1px 4px 6px 2px grey;
+
+
+}
+
+p {
+  padding: 4em 2em 8em 2em;
+}
+
+.footernav {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+}
+
+.footernav .footlink a {
+  color: #7f7f7f;
+  font-size: 12px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.listcontainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 60%;
+  width: 70%;
+  margin: auto;
+}
+
+.listcontainer > .listone, .listtwo {
+  padding: 2em 0;
+  width: 300px;
+}
+
+.listcontainer > .listone {
+
+  margin-right: auto;
+}
+
+.artlink {
+  text-align: center;
+  font-size: 24px;
+}
+
+.artlink > a {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+  color: red;
+}
+
+.artlink > a:hover {
+  color: black;
+}
+
+
+h3 {
+  margin: 2em;
+  padding-top: 2em;
+  text-align: center;
+}
+
+.contactform {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 60%;
+  border: 1px dotted black;
+  padding: 2em 1em;
+}
+
+.contactform > .namebox, .emailbox {
+  width: 30%;
+  margin-top: 1em;
+  border: 1px solid red;
+}
+.contactform > textarea, .inputbut {
+  margin: 1em auto;
+  display: block;
+  /*width: 80%;*/
+}
+textarea {
+  width: 80%;
+  height: auto;
+  border: 1px solid red;
+}
+.inputbut {
+    background-color: red;
+    border: none;
+    color: black;
+    width: 25%;
+    padding: 1%;
+    text-align: center;
+    text-decoration: none;
+}
+.inputbut:hover {
+    color: white;
+}
